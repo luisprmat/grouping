@@ -15,6 +15,9 @@
                         <li>
                             <a class="hover:underline" href="{{ route('group-by') }}">Group By (<i>{{ __('Simple') }}</i>)</a>
                         </li>
+                        <li>
+                            <a class="hover:underline" href="{{ route('group-by-aggregate-functions') }}">Group By Aggregate Functions (<i>SUM, AVG, MIN, MAX, COUNT</i>)</a>
+                        </li>
                     </ul>
                 </div>
             </div>
