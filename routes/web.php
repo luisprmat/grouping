@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GroupByAggregateFunctionsController;
+use App\Http\Controllers\GroupByAggregateWithCalculationsController;
 use App\Http\Controllers\GroupByController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,7 @@ Route::view('/dashboard', 'dashboard')->name('dashboard');
 
 Route::get('group-by', GroupByController::class)->name('group-by');
 Route::get('group-by-aggregate-functions', GroupByAggregateFunctionsController::class)->name('group-by-aggregate-functions');
+Route::get('group-by-aggregate-calculations', GroupByAggregateWithCalculationsController::class)->name('group-by-aggregate-with-calculations');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
